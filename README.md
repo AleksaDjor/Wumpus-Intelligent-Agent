@@ -31,9 +31,10 @@ The start position of the agent is facing right.
 Your assignment is to:
 
 Implement a »smart« agent capable of navigating the cave, avoiding pits and the Wumpus, picking up as much gold as possible (or maximise the number of points), and reach the exit point of the cave - field (x,y) that is defined in advance as the goal field. Agent's input should be the text file wumpus_world.txt. The output should be the »trace« of the agent together with all logical entailments for every move of the agent;
+
 Generate test worlds (at least three) - files »wumpus_world.txt« - that will serve as the input for the agent;
-Write a report describing your solution. The report should include: the description of the methods that you tested (can be in pseudocode), the description of the first order logic part of the agent's reasoning, the description of problems that you encountered during the process of implementing your solutions.
-You'll implement the agent as a hybrid algorithm that integrates logical induction, search and background knowledge (knowledge base). You have to take into consideration the following constraints:
+
+Write a report describing your solution. The report should include: the description of the methods that you tested (can be in pseudocode), the description of the first order logic part of the agent's reasoning, the description of problems that you encountered during the process of implementing your solutions. You'll implement the agent as a hybrid algorithm that integrates logical induction, search and background knowledge (knowledge base). You have to take into consideration the following constraints:
 
 Your agent has to integrate with some knowledge base.
 You need to implement a search algorithm (A* or some other search algorithm) to plan a route to a given field and interface it to the agent;
@@ -50,6 +51,7 @@ Your agent can read the whole cave map at once, but must not »see« fields, tha
 - Representation of the Wumpus world:
 
 Example of the wumpus_world.txt file:
+
 - A11
 
 - B21
@@ -101,6 +103,9 @@ Meaning of labels in the above example:
 
 - Wxy  = There's the Wumpus on the field (x,y)
 
+Example of the Wumpus world (wumpus world 1):
+
+![wumpus](https://github.com/user-attachments/assets/5e2bcf7d-c6e1-43d7-bff7-c311b5d1f46a)
 
 ## Programming the Wumpus world
 
